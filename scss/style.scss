@@ -1,3 +1,6 @@
+@import "btnConfig";
+@import "config";
+@import "utilities";
 
 * {
   box-sizing: border-box;
@@ -13,6 +16,10 @@ body {
 
 img {
   border-radius: 50%;
+  height:50%;
+  width: 50%;
+  
+
 }
 
 a {
@@ -21,7 +28,36 @@ a {
 
 .hero {
   // This is where the bulk of the SCSS styling needs to be done
+.box{
+  background-color:$primary-color ;
+  color:white;
+nav{
+  display:flex;
+  justify-content: center;
+  h1{
+    padding-right: 10px;
+  }
+    ul{
+    li{
+      list-style: none;
+      padding: 10px;
+      a{
+        color:$secondary-color;
+      }
+    }
+    display: flex;
+    
+    justify-content: center;
+  }
+}
+.hero-content{
+    display: flex;
+    h1{font-size: xx-large;}
+    justify-content: center;
+    align-items: center;
+}
 
+}
   // Take a look at the other files we've built already. How can they be useful here?
 
   // Also, take time to review the features of SCSS we've already covered:
